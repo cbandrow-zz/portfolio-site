@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  background-color: #666666;
+  z-index: 10;
+}
+
+.logo{
+  width: 10%;
+}
+
+.nav{
+  width: 10%;
+}
+
+.landing-page{
+  height: 90vh;
+  width: 100%;
+  background-color: #444444;
+  transition: 2s;
+}
+
+.light, .medium, .dark {
+  transition: 10s;
+  max-width: 100%;
+  background-size: cover;
+}
+
+.light{
+  background-image: url('./Assets/light.svg');
+}
+
+.medium{
+  background-image: url('./Assets/medium.svg');
+}
+
+.dark{
+  background-image: url('./Assets/dark.svg');
+}
+
+.about{
+  height: 90vh;
+  width: 100%;
+  background-color: #333333;
+}
+
+.projects{
+  height: 90vh;
+  width: 100%;
+  background-color: #222222;
+}
+
+.contact{
+  height: 90vh;
+  width: 100%;
+  background-color: #111111;
+}
