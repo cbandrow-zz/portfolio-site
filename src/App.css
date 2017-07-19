@@ -4,6 +4,11 @@
   font-family: 'Lato';
 }
 
+body{
+  margin: 0;
+  width: 100%;
+}
+
 h1{
 
 }
@@ -35,7 +40,7 @@ h1{
 .landing-page{
   height: 100vh;
   width: 100%;
-  background-color: #444444;
+  /*background-color: #444444;*/
 }
 
 .intro{
@@ -61,10 +66,12 @@ h1{
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.light, .medium, .dark {
-  transition: 10s;
+.light, .medium, .dark, .light-solid, .medium-solid, .dark-solid {
+  transition: 14s;
   max-width: 100%;
   background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .light{
@@ -79,26 +86,86 @@ h1{
   background-image: url('./Assets/dark.svg');
 }
 
+.light-skills-front{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-back{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-test{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-design{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-flow{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-git{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-email{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-skills-linkedin{
+  background-image: url('./Assets/light.svg');
+}
+
+.light-solid{
+  background-color: #0d1521;
+}
+
+.medium-solid{
+  background-color: #0a0a1c;
+}
+
+.dark-solid{
+  background-color: #0d0d0d;
+}
+
 .about{
   display: flex;
-  height: 90vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: #333333;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.about-background{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.about-background h3{
+  margin-bottom: 2px;
+}
+
+.about-background p{
+  margin-top: 2px;
+  margin-left: 15px;
 }
 
 .about-details{
+  color: #eeeeee;
   margin-right: 10px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 45%;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 
 .about-details h1{
   color: #eeeeee;
   font-size: 2em;
   margin-bottom: 5px;
+  margin-top: 2px;
 }
 
 .about-details h2{
@@ -114,25 +181,348 @@ h1{
 
 .about-skills{
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 45%;
-  margin-right: 25px;
+  margin-right: 10px;
+  color: #eeeeee;
 }
 
 .about-skills h1{
-  color: #eeeeee;
   font-size: 2em;
   margin-bottom: 5px;
+  margin-top: 2px;
 }
 
 .projects{
-  height: 90vh;
+  color: #eeeeee;
   width: 100%;
-  background-color: #222222;
+  background-color: rgba(30,30,30, 0.35);
+}
+
+.projects-wrapper{
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-bottom: 50px;
+}
+
+.projects-wrapper h1{
+  color: #eeeeee;
+  font-size: 2em;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.project-indiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-indiv h3{
+  margin-bottom: 0;
+  font-size: 19px;
+}
+
+.project-details{
+  width: 40%;
+}
+
+.project-images{
+  width: 50%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-images img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.project-images a{
+  display: inline-block;
+  margin-top: 10px;
+  color: #eeab00;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-images a:hover{
+  color: #ffff00;
 }
 
 .contact{
   height: 90vh;
   width: 100%;
-  background-color: #111111;
+  background-color: rgba(50,50,50, 0.35);
+  color: #eeeeee;
+}
+
+.contact-content{
+  display: flex;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.contact-content h1{
+  color: #eeeeee;
+  font-size: 2em;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.contact-content a{
+  display: inline-block;
+  margin-top: 10px;
+  color: #eeab00;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-content a:hover{
+  color: #ffff00;
+}
+
+.contact-item img {
+  width: 40%;
+  transition: 14s;
+}
+
+.skill-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-container ul{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.skill-container img{
+  width: 50%;
+  display: inline;
+}
+
+.front-end-skills, .back-end-skills, .testing-skills, .workflow-skills, .design-skills {
+  width: 50%;
+}
+
+.icons-skills{
+  transition: 14s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 50%;
+}
+
+.light-skills-front{
+  background-image: url('./Assets/light-front.svg');
+}
+
+.light-skills-back{
+  background-image: url('./Assets/light-back.svg');
+}
+
+.light-skills-test{
+  background-image: url('./Assets/light-test.svg');
+}
+
+.light-skills-design{
+  background-image: url('./Assets/light-design.svg');
+}
+
+.light-skills-flow{
+  background-image: url('./Assets/light-flow.svg');
+}
+
+.light-skills-git{
+  background-image: url('./Assets/light-git.svg');
+}
+
+.light-skills-email{
+  background-image: url('./Assets/light-email.svg');
+}
+
+.light-skills-linkedin{
+  background-image: url('./Assets/light-linkedin.svg');
+}
+
+.medium-skills-front{
+  background-image: url('./Assets/medium-front.svg');
+}
+
+.medium-skills-back{
+  background-image: url('./Assets/medium-back.svg');
+}
+
+.medium-skills-test{
+  background-image: url('./Assets/medium-test.svg');
+}
+
+.medium-skills-design{
+  background-image: url('./Assets/medium-design.svg');
+}
+
+.medium-skills-flow{
+  background-image: url('./Assets/medium-flow.svg');
+}
+
+.medium-skills-git{
+  background-image: url('./Assets/medium-git.svg');
+}
+
+.medium-skills-email{
+  background-image: url('./Assets/medium-email.svg');
+}
+
+.medium-skills-linkedin{
+  background-image: url('./Assets/dark-linkedin.svg');
+}
+
+.dark-skills-front{
+  background-image: url('./Assets/dark-front.svg');
+}
+
+.dark-skills-back{
+  background-image: url('./Assets/dark-back.svg');
+}
+
+.dark-skills-test{
+  background-image: url('./Assets/dark-test.svg');
+}
+
+.dark-skills-design{
+  background-image: url('./Assets/dark-design.svg');
+}
+
+.dark-skills-flow{
+  background-image: url('./Assets/dark-flow.svg');
+}
+
+.dark-skills-git{
+  background-image: url('./Assets/dark-git.svg');
+}
+
+.dark-skills-email{
+  background-image: url('./Assets/dark-email.svg');
+}
+
+.dark-skills-linkedin{
+  background-image: url('./Assets/light-linkedin.svg');
+}
+
+@media screen and (max-width: 890px){
+
+  .about-skills{
+    margin-left: 25px;
+    margin-right: 0px;
+    width: 41%;
+  }
+
+  .skill-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-container ul{
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .skill-container img{
+    width: 50%;
+    display: inline;
+  }
+
+  .front-end-skills, .back-end-skills, .testing-skills, .workflow-skills, .design-skills {
+    width: 60%;
+  }
+
+  .icons-skills{
+    transition: 14s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+  .landing-page{
+    height: 75vh;
+  }
+
+  .intro{
+    margin-top: 150px;
+  }
+
+  .intro h1{
+    font-size: 32px;
+  }
+
+  .intro h2{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .about{
+    justify-content: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about-details{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .about-details p{
+    font-size: 14px;
+  }
+
+  .about-skills{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .projects{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-details{
+    width: 100%;
+  }
+
+  .project-indiv{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .project-images{
+    width: 100%;
+  }
+
+  .projects-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .front-end-skills, .back-end-skills, .testing-skills, .workflow-skills, .design-skills {
+    width: 100%;
+  }
 }
