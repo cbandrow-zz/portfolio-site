@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Mukta+Vaani:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Alegreya+SC:700|Gurajada|IM+Fell+French+Canon+SC');
 
 *{
   font-family: 'Lato';
@@ -9,8 +9,8 @@ body{
   width: 100%;
 }
 
-h1{
-
+h1, h2{
+  font-family: "Gurajada";
 }
 
 .App {
@@ -54,13 +54,14 @@ h1{
 }
 
 .intro h1{
-  font-size: 3.75em;
+  line-height: .75;
+  font-size: 4.5em;
   margin-bottom: 5px;
-  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 1px 30px rgba(0, 0, 0, 0.5);
 }
 
 .intro h2{
-  font-size: 2.25em;
+  font-size: 2.75em;
   margin-top: 5px;
   font-weight: 400;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
@@ -163,15 +164,17 @@ h1{
 
 .about-details h1{
   color: #eeeeee;
-  font-size: 2em;
+  font-size: 3.5em;
   margin-bottom: 5px;
   margin-top: 2px;
 }
 
 .about-details h2{
   margin-top: 0;
-  font-size: 1.5em;
+  line-height: .75;
+  font-size: 2.75em;
   color: #eeeeee;
+  margin-bottom: 10px;
 }
 
 .about-details p{
@@ -187,10 +190,14 @@ h1{
   color: #eeeeee;
 }
 
-.about-skills h1{
-  font-size: 2em;
+.about-details h1, .about-skills h1, .projects-wrapper h1, .contact-wrapper h1{
+  font-size: 3.5em;
   margin-bottom: 5px;
   margin-top: 2px;
+}
+
+.about-background h2 {
+  margin-top: 25px;
 }
 
 .projects{
@@ -200,16 +207,15 @@ h1{
 }
 
 .projects-wrapper{
+  width: 85%;
   margin-top: 50px;
-  margin-left: 35px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
 }
 
 .projects-wrapper h1{
   color: #eeeeee;
-  font-size: 2em;
-  margin-bottom: 5px;
-  margin-top: 2px;
 }
 
 .project-indiv{
@@ -228,6 +234,20 @@ h1{
 
 .project-details{
   width: 40%;
+}
+
+.project-details h2{
+  margin-top: 25px;
+  line-height: .75;
+  font-size: 2.75em;
+  color: #eeeeee;
+  margin-bottom: 10px;
+}
+
+.projects-wrapper{
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-images{
@@ -256,10 +276,16 @@ h1{
 }
 
 .contact{
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-color: rgba(50,50,50, 0.35);
   color: #eeeeee;
+}
+
+.contact-wrapper{
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-content{
@@ -321,6 +347,53 @@ h1{
   height: 50%;
 }
 
+.contact-icons{
+  display: inline-block;
+  transition: 14s;
+  width: 75px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+
+.light-contact-git{
+  background-image: url('./Assets/light-git.svg');
+}
+
+.light-contact-email{
+  background-image: url('./Assets/light-email.svg');
+}
+
+.light-contact-linkedin{
+  background-image: url('./Assets/light-linkedin.svg');
+}
+
+.medium-contact-git{
+  background-image: url('./Assets/medium-git.svg');
+}
+
+.medium-contact-email{
+  background-image: url('./Assets/medium-email.svg');
+}
+
+.medium-contact-linkedin{
+  background-image: url('./Assets/medium-linkedin.svg');
+}
+
+.dark-contact-git{
+  background-image: url('./Assets/dark-git.svg');
+}
+
+.dark-contact-email{
+  background-image: url('./Assets/dark-email.svg');
+}
+
+.dark-contact-linkedin{
+  background-image: url('./Assets/dark-linkedin.svg');
+}
+
+
 .light-skills-front{
   background-image: url('./Assets/light-front.svg');
 }
@@ -339,18 +412,6 @@ h1{
 
 .light-skills-flow{
   background-image: url('./Assets/light-flow.svg');
-}
-
-.light-skills-git{
-  background-image: url('./Assets/light-git.svg');
-}
-
-.light-skills-email{
-  background-image: url('./Assets/light-email.svg');
-}
-
-.light-skills-linkedin{
-  background-image: url('./Assets/light-linkedin.svg');
 }
 
 .medium-skills-front{
@@ -373,18 +434,6 @@ h1{
   background-image: url('./Assets/medium-flow.svg');
 }
 
-.medium-skills-git{
-  background-image: url('./Assets/medium-git.svg');
-}
-
-.medium-skills-email{
-  background-image: url('./Assets/medium-email.svg');
-}
-
-.medium-skills-linkedin{
-  background-image: url('./Assets/dark-linkedin.svg');
-}
-
 .dark-skills-front{
   background-image: url('./Assets/dark-front.svg');
 }
@@ -403,18 +452,6 @@ h1{
 
 .dark-skills-flow{
   background-image: url('./Assets/dark-flow.svg');
-}
-
-.dark-skills-git{
-  background-image: url('./Assets/dark-git.svg');
-}
-
-.dark-skills-email{
-  background-image: url('./Assets/dark-email.svg');
-}
-
-.dark-skills-linkedin{
-  background-image: url('./Assets/light-linkedin.svg');
 }
 
 @media screen and (max-width: 890px){
@@ -453,10 +490,56 @@ h1{
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 768px){
+  .landing-page{
+    height: 65vh;
+  }
+
+  .intro h1{
+    font-size: 5em;
+    line-height: .75;
+  }
+
+  .intro h2{
+    font-size: 3.25em;
+    margin-top: 10px;
+  }
+
+  .about-details h1, .about-skills h1, .projects-wrapper h1, .contact-wrapper h1{
+    font-size: 3em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .about-details h2{
+    line-height: .85;
+    font-size: 2.25em;
+  }
+
+  .about-background h2{
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .projects-wrapper h2 {
+    line-height: .85;
+    font-size: 2.5em;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .contact-wrapper{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (max-width: 414px){
 
   .landing-page{
-    height: 75vh;
+    height: 85vh;
   }
 
   .intro{
@@ -464,11 +547,13 @@ h1{
   }
 
   .intro h1{
-    font-size: 32px;
+    font-size: 65px;
+    line-height: .75;
   }
 
   .intro h2{
-    font-size: 20px;
+    line-height: .85;
+    font-size: 35px;
     margin-top: 10px;
   }
 
@@ -491,6 +576,22 @@ h1{
     font-size: 14px;
   }
 
+  .about-details h1, .about-skills h1, .projects-wrapper h1, .contact-wrapper h1{
+    font-size: 3em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .about-details h2{
+    line-height: .85;
+    font-size: 2.25em;
+  }
+
+  .about-background h2{
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
   .about-skills{
     width: 100%;
     margin-left: 0;
@@ -498,7 +599,7 @@ h1{
   }
 
   .projects{
-    width: 85%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -518,11 +619,45 @@ h1{
   }
 
   .projects-wrapper{
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .projects-wrapper h2 {
+    line-height: .85;
+    font-size: 2.25em;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
   .front-end-skills, .back-end-skills, .testing-skills, .workflow-skills, .design-skills {
     width: 100%;
+  }
+  .contact-content{
+    flex-wrap: wrap;
+  }
+
+  .contact-wrapper{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-content a{
+    text-align: center;
+    /*display: block;*/
+  }
+
+  .contact-item{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+  }
+
+  .contact-item h3{
+    font-size: 16px;
+    display: inline;
   }
 }

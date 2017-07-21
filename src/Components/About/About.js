@@ -28,7 +28,6 @@ const About = (background) =>{
         <section className = "skill-container">
         <div className = "front-end-skills">
           <h3>Front End Technology</h3>
-          <img src = {`../../Assets/${background.background}-front.svg`}/>
           <ul>
             <li>HTML 5</li>
             <li>CSS</li>
@@ -82,5 +81,7 @@ const About = (background) =>{
     </section>
   )
 }
+
+/* <img src = {`../../Assets/${background.background}-front.svg`}/> */
 
 export default About
